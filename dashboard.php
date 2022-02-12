@@ -46,7 +46,7 @@
                	 foreach ($ks as $r) {
 						$bname = $r->name;
 						
-               	 ?>
+               	 ?>     
 						
 					
 						<tr>
