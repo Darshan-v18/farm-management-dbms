@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    position:fixed;
+    width: 100%;
+    
+}
+.big-banner{
+    height: 100vh;
+    background-image: url("../img/pexels-dan-hamill-436793.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    color:rgba(0, 0, 0, 0.842);
+    font-size: 4rem;
+}
+.admins{
+    margin: 0 5px;
+    border: none;
+}
+
+.big-banner  div{
+    background-color: rgba(214, 210, 210, 0.575);
+    padding: 20px 30px;
+    border-radius: 20px;
+    position: relative;
+    top:-6rem;
+    left: -10rem;
+    border-left:10px solid #343a40;
+}
+.navbar{
+    z-index: 10;
+}
+
+
