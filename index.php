@@ -75,7 +75,7 @@
     
   </div>
 </div><div class="card admins" >
-  <img class="card-img-top" src="./img/WhatsApp Image 2022-02-04 at 7.55.11 PM.jpeg" alt="Card image cap">
+  <img class="card-img-top" src="./img/WhatsApp Image 2022-03-27 at 4.27.52 PM.jpeg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">C Shravya Urs</h5>
     <p class="card-text">4VV19IS014<br>ISE 'A'</p>

@@ -60,7 +60,7 @@
 	 				$res = $get->fetchAll(PDO::FETCH_OBJ);
 	 				foreach($res as $n){ ?>
                          <tr>
-                         	<td> <?php echo $n->animalno; ?> </td>
+                         	<td> <?php echo $n->animal_no; ?> </td>
                          	<td>  <?php echo $n->date_q; ?> </td>
                          	<td><?php echo $n->breed; ?> </td>
                          	<td> <?php echo $n->reason; ?> </td>
@@ -86,7 +86,7 @@
 
       	$n_id = $_GET['id'];
 
-      	$insert_query = $db->query("INSERT INTO quarantine(animalno,breed,reason,date_q)VALUES('$n_animalno','$n_breed','$n_remark','$now') ");
+      	$insert_query = $db->query("INSERT INTO quarantine(animal_no,breed,reason,date_q)VALUES('$n_animalno','$n_breed','$n_remark','$now') ");
 
       	if($insert_query){?>
       	<div class="alert alert-success alert-dismissable">

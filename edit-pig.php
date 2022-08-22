@@ -16,7 +16,7 @@
  	$fetchObj = $query->fetchAll(PDO::FETCH_OBJ);
 
  	foreach($fetchObj as $obj){
-       $pigno = $obj->pigno;
+       $pigno = $obj->animalno;
        $weight = $obj->weight;
 	   $gender = $obj->gender;
 	   $remark = $obj->remark;
@@ -62,7 +62,7 @@
 
       	$n_id = $_GET['id'];
 
-      	$update_query = $db->query("UPDATE pigs SET pigno = '$n_pigno',weight = '$n_weight',arrived = '$n_arrived', breed_id = '$n_breed', remark = '$n_remark',health_status = '$n_status' WHERE id = '$n_id' ");
+      	$update_query = $db->query("UPDATE pigs SET animalno = '$n_pigno',weight = '$n_weight',arrived = '$n_arrived', breed_id = '$n_breed', remark = '$n_remark',health_status = '$n_status' WHERE id = '$n_id' ");
 
       	if($update_query){?>
       	<div class="alert alert-success alert-dismissable">
@@ -89,7 +89,7 @@
 	 	<form method="post">
 	 		<div class="form-group">
 	 			<label class="control-label">Animal No.</label>
-	 			<input type="text" name="pigno" class="form-control" value="<?php echo $pigno; ?>">
+	 			<input type="text" readonly name="pigno" class="form-control" value="<?php echo $pigno; ?>">
 	 		</div>
 
 	 		<div class="form-group">
@@ -131,7 +131,7 @@
 	 	</form>
  </div>
  <div class="col-md-4 col-md-offset-2">
- 	<h2>Pig Photo</h2>
+ 	<h2>Animal Photo</h2>
  	<img src="<?php echo $img; ?>" width="130" height="120" class="thumbnail img img-responsive">
  	<p class="text-justify text-center">
  		<?php echo $remark; ?>

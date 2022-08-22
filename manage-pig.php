@@ -63,8 +63,8 @@
                   <button class="btn btn-sm btn-default dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-cog"></i> Option
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
-                    <li><a href="edit-pig.php?id=<?php echo $data->id ?>"><i class="fa fa-edit"></i> Edit</a></li>
-                    <li><a onclick="return confirm('Continue delete animal ?')" href="delete.php?id=<?php echo $data->id ?>"><i class="fa fa-trash"></i> Delete</a></li>
+                    <li><a href="./edit-pig.php?id=<?php echo $data->id ?>"><i class="fa fa-edit"></i> Edit</a></li>
+                    <li><a onclick="return confirm('Continue delete animal ?')" href="delete.php?id=<?php echo $data->id?>"><i class="fa fa-trash"></i> Delete</a></li>
                     <li><a onclick="return confirm('Continue quarantine animal ?')" href="quarantine.php?id=<?php echo $data->id; ?>"><i class="fa fa-paper-plane"></i> Quarantine</a></li>
                     <li><a onclick="return confirm('Continue selling animal ?')" href="selling.php?id=<?php echo $data->id; ?>"><i class="fa fa-paper-plane"></i> Sell</a></li>
                   </ul>

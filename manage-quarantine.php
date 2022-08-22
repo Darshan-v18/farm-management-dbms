@@ -43,7 +43,7 @@
                          	<td>
                          		<input type="checkbox" name="selector[]" value="<?php echo $n->id ?>">
                          	</td>
-                         	<td> <?php echo $n->animalno; ?> </td>
+                         	<td> <?php echo $n->animal_no; ?> </td>
                          	<td>  <?php echo $n->date_q; ?> </td>
                          	<td><?php echo $n->breed; ?> </td>
                          	<td> <?php echo $n->reason; ?> </td>

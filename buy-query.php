@@ -17,7 +17,7 @@ if(!$_GET['id'] OR empty($_GET['id']))
         $ani_price = $n-> price;
         $cust_name = $_SESSION['customer'];
     }
-    $insQuery = $db->query("INSERT INTO sold_animal(customer_name,animal_no,animal_name,price)VALUES('$cust_name','$ani_no','$ani_name','$ani_price') ");
+    $insQuery = $db->query("INSERT INTO sold_animal(customer_name,animal_no,animal_name,price) VALUES ('$cust_name','$ani_no','$ani_name','$ani_price') ");
     if($insQuery){
         $query = $db->query("DELETE FROM selling WHERE id = $id ");
         if($query){
